@@ -9,7 +9,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/login", (req, res) => {
-    return res.send("Login Page");
+    return res.send("Login Page");  
+});
+
+app.get("/logout", (req, res) => {
+    return res.send("Logout Page");
 });
 
 app.listen(port, () => {
